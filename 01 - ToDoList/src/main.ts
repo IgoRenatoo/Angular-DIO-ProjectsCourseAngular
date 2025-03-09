@@ -1,6 +1,9 @@
-import { bootstrapApplication } from '@angular/platform-browser';
-import { appConfig } from './app/app.config';
-import { AppComponent } from './app/app.component';
+import { bootstrapApplication } from '@angular/platform-browser'
+import { HeaderComponent } from './app/header/header.component'
+import { MainComponent } from './app/main/main.component'
+import { FooterComponent } from './app/footer/footer.component'
 
-bootstrapApplication(AppComponent, appConfig)
-  .catch((err) => console.error(err));
+
+bootstrapApplication(HeaderComponent).catch((err) => console.error(err))
+bootstrapApplication(MainComponent).catch((err) => console.error(err))
+bootstrapApplication(FooterComponent).catch((err) => console.error(err))

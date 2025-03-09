@@ -1,7 +1,9 @@
 {
   "name": "to-do-list",
   "version": "0.0.0",
+  "type": "module",
   "scripts": {
+    "css": "npx stylelint **/*.css",
     "dev": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
@@ -31,6 +33,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "stylelint-order": "^6.0.4",
     "typescript": "~5.7.2"
   }
 }

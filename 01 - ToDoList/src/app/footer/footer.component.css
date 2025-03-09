@@ -1,0 +1,19 @@
+.app-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 10px;
+}
+
+.footer-links a {
+  margin: 0px 10px;
+  padding: 2px 5px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: var(--text-shadow);
+}

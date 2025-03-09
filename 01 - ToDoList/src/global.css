@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+  font-family: "Iceberg";
+  background-color: var(--bk-color);
+  color: var(--text);
+}
+
+.dark {
+  --bk-color: black;
+  --text: aliceblue;
+  --border: rgba(200, 200, 200, 0.4);
+  --text-shadow: red;
+  --box-s: rgba(255, 0, 0, 0.4);
+
+}

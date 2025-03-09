@@ -1,0 +1,48 @@
+.title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 30vh;
+  padding: 10px 20px;
+  flex: 1;
+}
+.title-container h1 {
+  text-align: center;
+  font-size: 72px;
+  letter-spacing: 8px;
+  color: var(--text);
+}
+.title-container p {
+  text-align: center;
+  font-size: 24px;
+  letter-spacing: 4px;
+  color: var(--text);
+}
+.navigation {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0 5%;
+  gap: 5%;
+}
+.navigation a {
+  padding: 2px 5px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+.navigation a:hover {
+  color: var(--text-shadow);
+}
+
+@media (max-width: 768px) {
+  .title-container h1 {
+    font-size: 56px;
+    letter-spacing: 6px;
+  }
+  .title-container p {
+    font-size: 12px;
+    letter-spacing: 3px;
+  }
+}
