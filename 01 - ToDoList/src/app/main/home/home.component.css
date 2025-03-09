@@ -1,0 +1,13 @@
+button {
+  display: flex;
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--text-shadow);
+  cursor: pointer;
+}
+button:hover {
+  background-color: var(--box-s);
+}

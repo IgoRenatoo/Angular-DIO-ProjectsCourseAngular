@@ -1,48 +1,53 @@
-.title-container {
+section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  height: 30vh;
+  height: 30%;
   padding: 10px 20px;
   flex: 1;
 }
-.title-container h1 {
+section h1 {
   text-align: center;
   font-size: 72px;
   letter-spacing: 8px;
   color: var(--text);
 }
-.title-container p {
+section p {
   text-align: center;
   font-size: 24px;
   letter-spacing: 4px;
   color: var(--text);
 }
-.navigation {
+nav {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   margin: 0 5%;
   gap: 5%;
 }
-.navigation a {
+nav a {
   padding: 2px 5px;
-  border-radius: 4px;
   text-decoration: none;
 }
-.navigation a:hover {
+nav a:hover {
   color: var(--text-shadow);
 }
 
 @media (max-width: 768px) {
-  .title-container h1 {
+  section h1 {
     font-size: 56px;
     letter-spacing: 6px;
   }
-  .title-container p {
-    font-size: 12px;
+  section p {
+    font-size: 16px;
     letter-spacing: 3px;
+  }
+}
+@media (max-width: 468px) {
+  section h1 {
+    font-size: 42px;
+    letter-spacing: 4px;
   }
 }
