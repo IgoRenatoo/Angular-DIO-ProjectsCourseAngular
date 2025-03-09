@@ -44,8 +44,8 @@ button:hover {
 .dark {
   --bk-color: black;
   --text: aliceblue;
-  --border: rgba(200, 200, 200, 0.4);
   --text-shadow: red;
+  --border: rgba(200, 200, 200, 0.2);
   --box-s: rgba(255, 0, 0, 0.4);
 }
 

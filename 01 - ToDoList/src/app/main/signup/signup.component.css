@@ -7,7 +7,6 @@ main {
 }
 
 label {
-  display: block;
   margin-bottom: 5px;
 }
 
@@ -15,7 +14,7 @@ input {
   width: 100%;
   margin-top: 5px;
   padding: 10px;
-  border: 1px solid #ffffff2c;
+  border: 1px solid var(--border);
   border-radius: 4px;
   box-sizing: border-box;
 }
