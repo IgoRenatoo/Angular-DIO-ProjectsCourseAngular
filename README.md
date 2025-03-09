@@ -15,9 +15,9 @@ Baseado em TypeScript, ele oferece recursos como:
 
 ### 🔹 Fundamentos
 - [✅] Criando projeto com `ng new <nome do projeto> --directory .`
-- [❌] Criando componente com `ng generate component <caminho da criação>`
-- [❌] Configuração do `assets` e `style`
-- [❌] Estrutura de um projeto Angular
+- [✅] Criando componente com `ng generate component <caminho da criação>`
+- [✅] Configuração do `assets` e `style`
+- [✅] Estrutura de um projeto Angular
 - [❌] Componentes e Templates
 - [❌] Data Binding (Interpolation, Property Binding, Event Binding e Two-way Binding)
 - [❌] Diretivas estruturais e atributivas
