@@ -1,0 +1,52 @@
+<main>
+  <h2>Adicionar Nova Tarefa</h2>
+  <section>
+    <form>
+      <div class="input-group">
+        <label for="title">Título:</label>
+        <input type="text" id="title" name="title" required placeholder="Digite o título da tarefa">
+      </div>
+
+      <div class="input-group">
+        <label for="description">Descrição:</label>
+        <textarea type="text" id="description" name="description" rows="4" required placeholder="Descreva a tarefa"></textarea>
+      </div>
+
+      <div class="input-group">
+        <label for="status">Status:</label>
+        <select id="status" name="status" required>
+          <option value="pendente">Pendente</option>
+          <option value="concluída">Concluída</option>
+          <option value="em progresso">Em progresso</option>
+        </select>
+      </div>
+
+      <button type="submit">Adicionar Tarefa</button>
+    </form>
+  </section>
+</main>
+<main>
+  <h2>Minhas Tarefas</h2>
+  <section>
+    <article>
+      <h3>Título da Tarefa 1</h3>
+      <p><strong>Descrição:</strong> Esta é uma tarefa de exemplo que precisa ser
+        feita até o final do mês.</p>
+      <p><strong>Status:</strong> Pendente</p>
+      <section class="manager">
+        <button>Editar</button>
+        <button>Excluir</button>
+      </section>
+    </article>
+
+    <article>
+      <h3>Título da Tarefa 2</h3>
+      <p><strong>Descrição:</strong> Esta tarefa é fictícia para fins de exemplo.</p>
+      <p><strong>Status:</strong> Concluída</p>
+      <section class="manager">
+        <button>Editar</button>
+        <button>Excluir</button>
+      </section>
+    </article>
+  </section>
+</main>

@@ -1,0 +1,42 @@
+main {
+  width: 30%;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  resize: none;
+}
+input:focus, textarea:focus, select:focus {
+  border-color: var(--box-s);
+  outline: none;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: solid 1px var(--border);
+  border-radius: 8px;
+  gap: 20px;
+}
+
+.manager {
+  flex-direction: row;
+}
+
+@media (max-width: 768px) {
+  main {
+    width: 80%;
+  }
+}

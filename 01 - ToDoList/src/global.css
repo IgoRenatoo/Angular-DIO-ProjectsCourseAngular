@@ -42,10 +42,10 @@ button:hover {
 }
 
 .dark {
-  --bk-color: black;
-  --text: aliceblue;
-  --text-shadow: red;
-  --border: rgba(200, 200, 200, 0.2);
+  --bk-color: rgb(0, 0, 0);
+  --text: rgb(240, 250, 255);
+  --text-shadow: rgb(255, 0, 0);
+  --border: rgba(255, 255, 255, 0.2);
   --box-s: rgba(255, 0, 0, 0.4);
 }
 
