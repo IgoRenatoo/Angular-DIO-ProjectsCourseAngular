@@ -1,13 +1,11 @@
 import { Component } from '@angular/core';
-import { HomeComponent } from './home/home.component';
-import { AboutComponent } from './about/about.component';
-import { LoginComponent } from './login/login.component';
-import { SignupComponent } from './signup/signup.component';
-import { TaskComponent } from './task/task.component';
+import { HeaderComponent } from '../header/header.component';
+import { FooterComponent } from '../footer/footer.component';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-main',
-  imports: [HomeComponent, AboutComponent, LoginComponent, SignupComponent, TaskComponent],
+  imports: [HeaderComponent, FooterComponent, RouterOutlet],
   templateUrl: './main.component.html',
   styleUrl: './main.component.css'
 })

@@ -30,6 +30,7 @@ nav {
 nav a {
   padding: 2px 5px;
   text-decoration: none;
+  cursor: pointer;
 }
 nav a:hover {
   color: var(--text-shadow);

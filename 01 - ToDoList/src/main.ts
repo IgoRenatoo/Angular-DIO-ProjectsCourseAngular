@@ -1,9 +1,20 @@
 import { bootstrapApplication } from '@angular/platform-browser'
-import { HeaderComponent } from './app/header/header.component'
+import { provideRouter } from '@angular/router'
 import { MainComponent } from './app/main/main.component'
-import { FooterComponent } from './app/footer/footer.component'
+import { HomeComponent } from './app/main/home/home.component'
+import { AboutComponent } from './app/main/about/about.component'
+import { LoginComponent } from './app/main/login/login.component'
+import { SignupComponent } from './app/main/signup/signup.component'
+import { TaskComponent } from './app/main/task/task.component'
 
+const routes = [
+  { path: '', component: HomeComponent },
+  { path: 'tarefas', component: TaskComponent },
+  { path: 'sobre', component: AboutComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'cadastro', component: SignupComponent }
+];
 
-bootstrapApplication(HeaderComponent).catch((err) => console.error(err))
-bootstrapApplication(MainComponent).catch((err) => console.error(err))
-bootstrapApplication(FooterComponent).catch((err) => console.error(err))
+bootstrapApplication(MainComponent, {
+  providers: [provideRouter(routes)]
+}).catch((err) => console.error(err))
