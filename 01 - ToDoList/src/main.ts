@@ -13,8 +13,6 @@ const routes = [
   { path: 'sobre', component: AboutComponent },
   { path: 'login', component: LoginComponent },
   { path: 'cadastro', component: SignupComponent }
-];
+]
 
-bootstrapApplication(MainComponent, {
-  providers: [provideRouter(routes)]
-}).catch((err) => console.error(err))
+bootstrapApplication(MainComponent, { providers: [provideRouter(routes)] }).catch((err) => console.error(err))

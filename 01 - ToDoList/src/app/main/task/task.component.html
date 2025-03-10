@@ -1,20 +1,20 @@
 <main>
   <h2>Adicionar Nova Tarefa</h2>
   <section>
-    <form>
+    <form (ngSubmit)="onClick()">
       <div class="input-group">
         <label for="title">Título:</label>
-        <input type="text" id="title" name="title" required placeholder="Digite o título da tarefa">
+        <input type="text" id="title" name="taskTitle" [(ngModel)]="taskTitle" required placeholder="Digite o título da tarefa">
       </div>
 
       <div class="input-group">
         <label for="description">Descrição:</label>
-        <textarea type="text" id="description" name="description" rows="4" required placeholder="Descreva a tarefa"></textarea>
+        <textarea type="text" id="description" name="taskDescription" [(ngModel)]="taskDescription" rows="4" required placeholder="Descreva a tarefa"></textarea>
       </div>
 
       <div class="input-group">
         <label for="status">Status:</label>
-        <select id="status" name="status" required>
+        <select id="status" name="taskStatus" [(ngModel)]="taskStatus" required>
           <option value="pendente">Pendente</option>
           <option value="concluída">Concluída</option>
           <option value="em progresso">Em progresso</option>
@@ -28,24 +28,13 @@
 <main>
   <h2>Minhas Tarefas</h2>
   <section>
-    <article>
-      <h3>Título da Tarefa 1</h3>
-      <p><strong>Descrição:</strong> Esta é uma tarefa de exemplo que precisa ser
-        feita até o final do mês.</p>
-      <p><strong>Status:</strong> Pendente</p>
+    <article *ngFor="let task of tasks; let i = index">
+      <h3>Título da tarefa: {{ task.taskTitle }}</h3>
+      <p><strong>Descrição:</strong> {{ task.taskDescription }}</p>
+      <p><strong>Status:</strong> {{ task.taskStatus }}</p>
       <section class="manager">
-        <button>Editar</button>
-        <button>Excluir</button>
-      </section>
-    </article>
-
-    <article>
-      <h3>Título da Tarefa 2</h3>
-      <p><strong>Descrição:</strong> Esta tarefa é fictícia para fins de exemplo.</p>
-      <p><strong>Status:</strong> Concluída</p>
-      <section class="manager">
-        <button>Editar</button>
-        <button>Excluir</button>
+        <button (click)="onEdit(i)">Editar</button>
+        <button (click)="onDelete(i)">Excluir</button>
       </section>
     </article>
   </section>
