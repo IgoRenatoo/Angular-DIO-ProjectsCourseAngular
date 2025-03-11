@@ -15,4 +15,4 @@ const routes = [
   { path: 'cadastro', component: SignupComponent }
 ]
 
-bootstrapApplication(MainComponent, { providers: [provideRouter(routes)] }).catch((err) => console.error(err))
+bootstrapApplication(MainComponent, { providers: [provideRouter(routes)] }).catch(err => console.error(err))

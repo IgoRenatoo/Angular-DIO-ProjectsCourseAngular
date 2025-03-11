@@ -1,27 +1,26 @@
-/* To learn more about Typescript configuration file: https://www.typescriptlang.org/docs/handbook/tsconfig-json.html. */
-/* To learn more about Angular compiler options: https://angular.dev/reference/configs/angular-compiler-options. */
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "outDir": "./dist/out-tsc",
-    "strict": true,
-    "noImplicitOverride": true,
-    "noPropertyAccessFromIndexSignature": true,
-    "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true,
-    "skipLibCheck": true,
-    "isolatedModules": true,
-    "esModuleInterop": true,
-    "experimentalDecorators": true,
-    "moduleResolution": "bundler",
-    "importHelpers": true,
-    "target": "ES2022",
-    "module": "ES2022"
+    "target": "ES2023", // Define a versão do JavaScript que será gerada.
+    "module": "ES2022", // Configura o sistema de módulos usado no Node.js.
+    "outDir": "./dist", // Diretório onde os arquivos compilados serão salvos.
+    "rootDir": "./src", // Diretório base para os arquivos TypeScript.
+    "forceConsistentCasingInFileNames": true, // Garante consistência de maiúsculas/minúsculas nos nomes de arquivos.
+    "strict": true, // Ativa o modo estrito, que inclui várias verificações rigorosas.
+    "esModuleInterop": true, // Habilita a interoperabilidade com módulos do ECMAScript.
+    "isolatedModules": true, // Garante que cada arquivo seja tratado como um módulo isolado.
+    "skipLibCheck": true, // Ignora verificações de tipos em arquivos de declaração (d.ts).
+    "noImplicitOverride": true, // Gera erro se um método sobrescrito não tiver a palavra-chave 'override'.
+    "noImplicitReturns": true, // Gera erro se uma função não retorna explicitamente um valor.
+    "noFallthroughCasesInSwitch": true, // Erro se um `case` no `switch` não tiver `break` ou `return`.
+    "noPropertyAccessFromIndexSignature": true, // Impede acesso direto a propriedades sem índice definido. ex.: var.theme ~> var["theme"]
+    "importHelpers": true, // Usa a biblioteca 'tslib' para reduzir o tamanho do código gerado.
+    "moduleResolution": "bundler" // Define a estratégia de resolução de módulos como a usada por bundlers modernos.
   },
   "angularCompilerOptions": {
-    "enableI18nLegacyMessageIdFormat": false,
-    "strictInjectionParameters": true,
-    "strictInputAccessModifiers": true,
-    "strictTemplates": true
+    "enableI18nLegacyMessageIdFormat": false, // Usa novos formatos para mensagens de internacionalização (i18n).
+    "strictInjectionParameters": true, // Garante que injeções de dependência tenham tipos corretos.
+    "strictInputAccessModifiers": true, // Respeita modificadores private e protected em inputs de componentes.
+    "strictTemplates": true // Aplica regras estritas no template do Angular, garantindo melhor verificação de erros.
   }
 }

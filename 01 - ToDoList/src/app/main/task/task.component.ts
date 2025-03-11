@@ -21,23 +21,23 @@ export class TaskComponent {
   taskDescription: string = ''
   taskStatus: string = 'pendente'
 
-  onClick() {
+  onClick () {
     if (this.taskTitle && this.taskDescription) {
       this.tasks.push({ taskTitle: this.taskTitle, taskDescription: this.taskDescription, taskStatus: this.taskStatus })
-      
+
       alert(JSON.stringify(this.tasks))
       this.taskTitle = ''
       this.taskDescription = ''
       this.taskStatus = 'pendente'
 
     } else {
-      alert('Por favor, preencha todos os campos!');
+      alert('Por favor, preencha todos os campos!')
     }
   }
-  onEdit(id: number) {
+  onEdit (id: number) {
     alert('Pendendo desenvolvimento da lógica...')
   }
-  onDelete(id: number) {
+  onDelete (id: number) {
     this.tasks.splice(id, 1)
   }
 }
