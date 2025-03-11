@@ -19,28 +19,34 @@ Baseado em TypeScript, ele oferece recursos como:
 - [✅] Configuração do `assets` e `style`
 - [✅] Estrutura de um projeto Angular
 - [❌] Componentes e Templates
-- [❌] Data Binding (Interpolation, Property Binding, Event Binding e Two-way Binding)
-- [❌] Diretivas estruturais e atributivas
+- [✅] Data Binding (Interpolation, Property Binding, Event Binding e Two-way Binding)
+- [✅] Importar módulo FormsModule (`ngModel`, `ngForm`, `ngModelGroup`, `ngSubmit`)
+- [✅] Importar módulo CommonModule (`ngIf`, `ngFor`, `ngClass`, `ngStyle`)
 - [❌] Pipes para formatação de dados
 - [❌] Serviços e injeção de dependência
 
 ### 🔹 Roteamento e Navegação
-- [❌] Configuração de rotas
+- [✅] Configuração de rotas
 - [❌] Roteamento dinâmico com parâmetros
 - [❌] Guards de rota (AuthGuard, CanActivate, etc.)
-- [❌] Lazy Loading de módulos
+- [✅] Lazy Loading de módulos
 
 ### 🔹 Trabalhando com APIs
 - [❌] Consumo de APIs REST com HttpClient
 - [❌] Interceptadores de requisição e resposta
 - [❌] Autenticação com JWT
+- [❌] Gerenciamento de erros e HttpErrorResponse
+- [❌] Retry e RetryWhen com RxJS para reenvio de requisições falhas
+- [❌] DebounceTime para otimizar chamadas à API em campos de busca
+- [❌] Paginação e Infinite Scroll com Angular Material e APIs
+- [❌] Cache de requisições com RxJS (shareReplay)
 
 ### 🔹 Gerenciamento de Estado
 - [❌] Uso do BehaviorSubject e Observables
 - [❌] NgRx para gerenciamento reativo de estado
 
 ### 🔹 Testes
-- [❌] Testes unitários com Jasmine e Karma
+- [❌] Testes unitários com Jest
 - [❌] Testes de integração e e2e
 
 ## 🔄 Pendências de Revisão

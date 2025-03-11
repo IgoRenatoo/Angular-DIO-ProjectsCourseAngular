@@ -35,14 +35,18 @@ Pendente preenchimento.
 
 ## 🛠 Tecnologias Utilizadas
 
-![image](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
-![image](https://img.shields.io/badge/Angular-FFFFFF?style=for-the-badge&logo=Angular&logoColor=red)
-![image](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
-![image](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
-![image](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white)
-![image](https://img.shields.io/badge/Sequelize-52B0E7?style=for-the-badge&logo=sequelize&logoColor=white)
-![image](https://img.shields.io/badge/Swagger-85EA2D?style=for-the-badge&logo=swagger&logoColor=black)
-![image](https://img.shields.io/badge/StandardJS-F4f4f4?style=for-the-badge&logo=javascript&logoColor=red)
+![NodeJs](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
+![Angular](https://img.shields.io/badge/Angular-FFFFFF?style=for-the-badge&logo=Angular&logoColor=red)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![Zod](https://img.shields.io/badge/Zod-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white)
+![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white)
+![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white)
+![Argon2](https://img.shields.io/badge/Argon2-654FF0?style=for-the-badge&logo=javascript&logoColor=white)
+![CORS](https://img.shields.io/badge/CORS-4B8BBE?style=for-the-badge&logo=javascript&logoColor=white)
+![Helmet](https://img.shields.io/badge/Helmet-00A98F?style=for-the-badge&logo=javascript&logoColor=white)
+![Swagger](https://img.shields.io/badge/Swagger-85EA2D?style=for-the-badge&logo=swagger&logoColor=black)
+![StandardJS](https://img.shields.io/badge/StandardJS-F4f4f4?style=for-the-badge&logo=javascript&logoColor=red)
 
 ## ⚙ Instalação
 
@@ -54,37 +58,7 @@ Pendente preenchimento.
 
 ## 🧩 Funcionalidades
 
-### **1️⃣ CRUD de Tarefas**  
-[❌] Criar tarefas com título, descrição e data de vencimento  
-[❌] Editar tarefas existentes  
-[❌] Marcar tarefas como concluídas  
-[❌] Excluir tarefas  
-
-### **2️⃣ Persistência de Dados**  
-[❌] Armazenar tarefas no **LocalStorage** para manter os dados entre sessões  
-[❌] Atualizar o LocalStorage sempre que houver mudanças  
-
-### **3️⃣ Filtros e Ordenação**  
-[❌] Filtrar tarefas por status (pendente, concluída)  
-[❌] Filtrar tarefas por data de vencimento  
-
-### **4️⃣ UI/UX Melhorada**  
-[❌] Animações e transições usando **Angular Animations**  
-[❌] Notificações visuais para sucesso ou erro nas operações  
-
-### **5️⃣ Reatividade e Melhor Desempenho**  
-[❌] Utilizar **RxJS** para atualizar a lista de tarefas em tempo real  
-[❌] Implementar **Subject/BehaviorSubject** para comunicação entre componentes  
-[❌] Criar **Observables** para manipulação eficiente de dados  
-
-### **6️⃣ Melhoria da Experiência do Usuário**  
-[❌] Confirmação antes de excluir uma tarefa  
-[❌] Exibir contadores (quantas tarefas pendentes/concluídas)  
-[❌] Opção de "desfazer" exclusões recentes  
-
-### **7️⃣ Responsividade e Estilização**  
-[❌] Layout responsivo para mobile e desktop  
-[❌] Uso de Material Design ou Bootstrap para um visual moderno  
+Pendente preenchimento.
 
 ## ⏳ Pendências
 
