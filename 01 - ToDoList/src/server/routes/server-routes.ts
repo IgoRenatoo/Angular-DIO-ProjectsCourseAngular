@@ -1,6 +1,6 @@
 import { Router } from 'express'
-import { createUser } from '../controllers/signup-controller'
+import * as access from '../controllers/index'
 
 export const routes = Router()
 
-routes.get('/', createUser)
+routes.post('/signup', access.createUserController)
