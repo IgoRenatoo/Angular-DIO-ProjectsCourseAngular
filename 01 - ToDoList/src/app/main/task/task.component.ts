@@ -1,6 +1,6 @@
 import { Component } from '@angular/core'
-import { CommonModule } from '@angular/common'
 import { FormsModule } from '@angular/forms'
+import { CommonModule } from '@angular/common'
 
 export interface ITask {
   taskTitle: string
@@ -35,7 +35,7 @@ export class TaskComponent {
     }
   }
   onEdit (id: number) {
-    alert('Pendendo desenvolvimento da lógica...')
+    alert('Pendente desenvolvimento da lógica...')
   }
   onDelete (id: number) {
     this.tasks.splice(id, 1)
