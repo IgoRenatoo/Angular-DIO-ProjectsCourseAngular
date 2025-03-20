@@ -1,4 +1,5 @@
 export interface Return {
   code: number
-  content: string
+  message: string
+  content?: any
 }

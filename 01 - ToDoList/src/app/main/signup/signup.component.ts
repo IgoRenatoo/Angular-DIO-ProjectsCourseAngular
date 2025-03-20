@@ -33,12 +33,12 @@ export class SignupComponent {
     }
     this.http.post<any>('http://localhost:3000/api/signup', payload).subscribe({
       next: (response) => {
-        alert(JSON.stringify(response.content))
+        alert(JSON.stringify(response.message))
         this.router.navigate(['/login'])
       },
       error: (err) => {
         console.error('Erro no cadastro:', err)
-        alert(`Erro ao realizar cadastro. ${err.error.content}`)
+        alert(`Erro ao realizar cadastro. ${err.error.message ?? 'Servidor indisponível!'}`)
       }
     })
   }
