@@ -1,8 +1,8 @@
 import { Request, Response } from 'express'
-import { createUserService } from '../services/signup-service'
+import { signupService } from '../services/signup-service'
 import { hashPassword } from '../services/hash-service'
 
-export async function createUserController (req: Request, res: Response): Promise<void> {
+export async function signupController (req: Request, res: Response): Promise<void> {
   try {
     const { username, password } = req.body
 
@@ -11,7 +11,7 @@ export async function createUserController (req: Request, res: Response): Promis
       return
     }
     const hash = await hashPassword(password)
-    const result = await createUserService(username, hash)
+    const result = await signupService(username, hash)
     res.status(result.code).send({ content:  result.content })
   } catch (error) {
     res.status(500).send({ content: 'Erro inesperado, tente novamente mais tarde!' })

@@ -5,7 +5,7 @@ interface IReturn {
   content: string
 }
 
-export const createUserService = async (username: string, password: string): Promise<IReturn> => {
+export const signupService = async (username: string, password: string): Promise<IReturn> => {
   try {
     const [rows] = await db.execute('SELECT * FROM users WHERE name = ?', [username])
 

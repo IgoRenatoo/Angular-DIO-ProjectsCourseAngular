@@ -32,6 +32,12 @@ a:hover {
   color: var(--text-shadow);
 }
 
+.isInvalid {
+  margin-top: 10px;
+  font-size: 13px;
+  color: red;
+}
+
 @media (max-width: 768px) {
   main {
     width: 80%;

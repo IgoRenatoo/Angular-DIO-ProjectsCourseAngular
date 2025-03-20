@@ -7,7 +7,7 @@ import { routes } from './routes/server-routes'
 
 const server = express()
 
-server.use(cors({ origin: 'http://localhost:3000/' }))
+server.use(cors({ origin: 'http://localhost:4200' }))
 server.use(helmet())
 server.use(express.json())
 server.use('/api', routes)
