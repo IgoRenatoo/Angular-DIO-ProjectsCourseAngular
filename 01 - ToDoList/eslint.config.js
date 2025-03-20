@@ -36,7 +36,7 @@ export default [
       'array-bracket-spacing': ['error', 'never'], // Sem espaço dentro de colchetes
 
       // Funções e Classes
-      'arrow-parens': ['error', 'as-needed'], // Parênteses opcionais em arrow functions com um único argumento
+      'arrow-parens': ['off', 'as-needed'], // Parênteses opcionais em arrow functions com um único argumento
       'constructor-super': 'error', // super() deve ser chamado no construtor de classes derivadas
       'no-duplicate-imports': 'error', // Sem importações duplicadas
 
