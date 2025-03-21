@@ -5,7 +5,9 @@
   </section>
   <nav>
     <a routerLink="/">INÍCIO</a>
-    <a routerLink="/tarefas">TAREFA</a>
+    @if (_token()) {
+      <a routerLink="/tarefas">TAREFA</a>
+    }
     <a routerLink="/sobre">SOBRE</a>
     <a routerLink="/login">LOGIN</a>
   </nav>

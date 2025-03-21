@@ -1,21 +1,32 @@
 <main>
-  <section>
-    <h2>Login</h2>
-    <form id="login-form">
+  <!-- Se não estiver logado, exibe a estrutura de login -->
+  @if (!_token()) {
+    <section>
+      <h2>Login</h2>
+      <form id="login-form" (ngSubmit)="onSubmit()">
         <div class="input-group">
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
+          <label for="username">Username:</label>
+          <input type="email" id="username" name="username" required [(ngModel)]="userData.username">
         </div>
         <div class="input-group">
-            <label for="password">Senha:</label>
-            <input type="password" id="password" name="password" required>
+          <label for="password">Senha:</label>
+          <input type="password" id="password" name="password" required [(ngModel)]="userData.password">
         </div>
         <button type="submit">Entrar</button>
-    </form>    
-  </section>
-  <section>
-    <p><a href="#">Esqueceu sua senha?</a></p>
-    <p>Não tem uma conta? <a routerLink="/cadastro">Cadastre-se</a></p>
-  </section>
+      </form>
+      
+      <section>
+        <p><a href="#">Esqueceu sua senha?</a></p>
+        <p>Não tem uma conta? <a routerLink="/cadastro">Cadastre-se</a></p>
+      </section>
+    </section>
+  }
+  <!-- Se estiver logado, exibe a mensagem de boas-vindas e botão de logout -->
+  @if (_token()) {
+    <section>
+      <h2>Bem-vindo!</h2>
+      <p>Você já está logado.</p>
+      <button (click)="onLogout()">Sair</button>
+    </section>
+  }
 </main>
-
