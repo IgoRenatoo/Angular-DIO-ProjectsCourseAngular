@@ -5,3 +5,5 @@ export const routes = Router()
 
 routes.post('/signup', access.signupController)
 routes.post('/login', access.loginController)
+
+routes.post('/task', access.createTaskController)
